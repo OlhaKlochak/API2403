@@ -33,7 +33,6 @@ public class TestApiEx {
     @Test
     public void test() {
         JSONObject exchange = jsonArray.getJSONObject(0);
-        System.out.println(exchange.getString("cc"));
-        System.out.println(exchange.getFloat("rate"));
+        System.out.println(exchange.getString("cc")+" "+(exchange.getFloat("rate")));
     }
 }
