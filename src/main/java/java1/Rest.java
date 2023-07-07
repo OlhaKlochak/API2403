@@ -1,3 +1,5 @@
+package java1;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -6,7 +8,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class Rest {
+public class Rest{
     public static String getRest(String url) {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         String ent=null;

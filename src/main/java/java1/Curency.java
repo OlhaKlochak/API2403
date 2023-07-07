@@ -5,7 +5,7 @@ public enum Curency {
     EUR("eur"),
     USD("usd");
 
-    final String curency;
+     String curency;
 
     Curency(String curency) {
         this.curency = curency;
