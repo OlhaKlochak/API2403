@@ -12,7 +12,9 @@ public class TestCharacters {
     public void PrintName() throws JsonProcessingException {
         ObjectMapper om = new ObjectMapper();
          Characters characters = om.readValue(Rest.getRest("https://rickandmortyapi.com/api/episode"),Characters.class);
+         int i=1;
         do {
+            i++;
             for (Result l: characters.results) {
                 System.out.println(l.name +": "+l.air_date);
 
@@ -22,6 +24,7 @@ public class TestCharacters {
             }
 
         }while (characters.info.next!=null);
+        System.out.println("=========="+i);
 
     }
 }
